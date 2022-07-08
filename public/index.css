@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.carousel{
+    position: relative;
+}
+
+.carousel img{
+    height: 80vh;
+}
+
+.add-product{
+    position: absolute;
+    top: 40%;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-title{
+    color: black;
+}
+
+.modal-body form{
+    color: black;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.added-products{
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.added-products table{
+    width: 60%;
+    margin: 2rem auto;
+    border: 1px solid black;
+}
+
+.added-products th,
+.added-products tr,
+.added-products td{
+    border: 1px solid black;
+}
+
+.added-products table tbody tr td a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 0.7rem;
+}
+
+.view-page{
+    background: linear-gradient(360deg, rgb(30,30,30), rgb(40,40,40));
+    width: 100%;
+    padding: 5rem;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    animation: rotateBox 0.5s linear;
+}
+
+.view-page a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 0.7rem;
+}
+
+.view-page-content{
+    width: 60%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 4rem;
+    margin: auto;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.4);
+    background: linear-gradient(360deg, rgb(90,90,90), rgb(140,140,140));
+    animation: contentBox 3s infinite;
+}
+
+@keyframes contentBox {
+    0%{
+        border-radius: 0;
+    }
+    50%{
+        border-radius: 30%;
+    }
+    100%{
+        border-radius: 0;
+    }
+}
+
+@keyframes rotateBox {
+    0%{
+        transform: rotate(90deg);
+    }
+}
+
+.view-page-content h2{
+    font-size: 2rem;
+}
+
+.view-page-content p{
+    margin: 2rem 0;
+    font-size: 1.1rem;
+    height: 70%;
+}
+
+
+@media (max-width: 420px) {
+    .added-products table{
+        width: 95%;
+    }
+
+    .view-page{
+        padding: 0;
+        padding-top: 4rem;
+    }
+
+    .view-page-content{
+        width: 80%;
+        height: 90%;
+    }
+
+    .view-page-content h2{
+        font-size: 1.5rem;
+    }
+    
+    .view-page-content p{
+        margin: 2rem 0;
+        font-size: 0.9rem;
+        height: 70%;
+    }
+}
