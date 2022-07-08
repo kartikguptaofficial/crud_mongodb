@@ -31,6 +31,10 @@
     flex-direction: column;
 }
 
+.modal-body form input{
+    height: 2.5rem;
+}
+
 .added-products{
     width: 100%;
     text-align: center;
